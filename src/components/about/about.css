@@ -34,6 +34,10 @@
     color: var(--color-light);
 }
 
+.emphasis {
+    color: var(--color-primary);
+}
+
 /* ========================== MEDIA QUERIES (MEDIUM DEVICES) ==================*/
 @media screen and (max-width: 1024px) {
     .about__container {
