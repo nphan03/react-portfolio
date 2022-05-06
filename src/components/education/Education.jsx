@@ -17,7 +17,7 @@ const Education = () => {
                             <p>Langara College</p>
                             <p>Degree: Diploma</p>
                             <p>GPA: 3.77</p>
-                            <a href="https://langara.ca/programs-and-courses/programs/computer-studies/index.html" className="btn">Program Info</a>
+                            <a href="https://langara.ca/programs-and-courses/programs/computer-studies/index.html" className="btn" target='_blank'>Program Info</a>
                         </div>
                     </article>
 
@@ -28,7 +28,7 @@ const Education = () => {
                             <p>Langara College</p>
                             <p>Degree: Citation</p>
                             <p>GPA: 4.22</p>
-                            <a href="https://langara.ca/programs-and-courses/programs/full-stack-web-development/index.html" className="btn">Program Info</a>
+                            <a href="https://langara.ca/programs-and-courses/programs/full-stack-web-development/index.html" className="btn" target='_blank'>Program Info</a>
                         </div>
                     </article>               
                 
