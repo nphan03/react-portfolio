@@ -22,9 +22,7 @@ const App = () => {
     return sec.current.getBoundingClientRect().y + sec.current.getBoundingClientRect().height *1/3 < window.innerHeight;
   }
   useEffect (()=>{
-    const handleScroll = () => {
-      console.log(aboutRef.current.getBoundingClientRect().height);
-      
+    const handleScroll = () => {      
       if (isOnScroll(homeRef)) setActiveNav('#')
       if (isOnScroll(aboutRef)) setActiveNav('#about')
       if (isOnScroll(skillsRef)) setActiveNav('#skills')
@@ -36,7 +34,7 @@ const App = () => {
     return () => {
       document.removeEventListener('scroll', handleScroll);
     }
-})
+  });
 
   return (
     <>
