@@ -54,10 +54,10 @@ const data = [
 ]
 
 
-const Projects = () => {
+const Projects = React.forwardRef((props, ref) => {
 
     return (
-        <section id="projects">
+        <section id="projects" ref={ref}>
             <h5>My Recent Work</h5>
             <h2>Portfolio</h2>
             <div className="container projects__container">
@@ -80,6 +80,6 @@ const Projects = () => {
             </div>
         </section>
     )
-};
+});
 
 export default Projects;

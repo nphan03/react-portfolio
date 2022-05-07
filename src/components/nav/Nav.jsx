@@ -4,10 +4,11 @@ import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
 import {FaUserGraduate} from 'react-icons/fa'
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
-import {useState, useRef, useEffect} from 'react'
 
-const Nav = (props) => {
-  const [activeNav, setActiveNav] = useState('#');
+const Nav = params => {
+  //states passed from App
+  const setActiveNav = params.setActiveNav;
+  const activeNav = params.activeNav;
 
   return (
     <nav>

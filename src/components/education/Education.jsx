@@ -3,9 +3,9 @@ import './education.css';
 import {FaSchool, FaAward} from 'react-icons/fa';
 import {FcDiploma1} from 'react-icons/fc';
 
-const Education = () => {
+const Education = React.forwardRef((props, ref) => {
     return (
-        <section id="education">
+        <section id="education" ref={ref}>
             <h5>Where I Studied</h5>
             <h2>Education and Awards</h2>
             
@@ -35,6 +35,6 @@ const Education = () => {
             </div>
         </section>
     )
-};
+});
 
 export default Education;

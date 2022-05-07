@@ -4,9 +4,9 @@ import ME from '../../assets/me-about.jpg';
 import {MdWavingHand} from 'react-icons/md';
 import {FaRegSmileWink} from 'react-icons/fa';
 
-const About = () => {
+const About = React.forwardRef((props, ref) => {
     return (
-        <section id="about">
+        <section id="about" ref={ref}>
             <h5>Get To Know</h5>
             <h2>About Me</h2>
 
@@ -29,6 +29,6 @@ const About = () => {
             </div>
         </section>
     )
-};
+});
 
 export default About;

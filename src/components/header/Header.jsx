@@ -4,9 +4,9 @@ import CTA from './CTA'
 import ME from '../../assets/me.png';
 import HeaderSocials from './HeaderSocials';
 
-const Header = () => {
+const Header = React.forwardRef((props, ref) => {
   return (
-    <header>
+    <header ref={ref}>
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Alice Phan</h1>
@@ -22,6 +22,6 @@ const Header = () => {
       </div>
     </header>
   )
-}
+});
 
 export default Header

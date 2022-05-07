@@ -2,9 +2,9 @@ import React from 'react'
 import './skills.css'
 import {BsFillPatchCheckFill} from 'react-icons/bs'
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
   return (
-    <section id="skills">
+    <section id="skills" ref={ref}>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
@@ -58,6 +58,6 @@ const Skills = () => {
         </div>
     </section>
   )
-}
+});
 
 export default Skills
