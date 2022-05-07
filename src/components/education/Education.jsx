@@ -1,7 +1,5 @@
 import React from 'react';
 import './education.css';
-import {FaSchool, FaAward} from 'react-icons/fa';
-import {FcDiploma1} from 'react-icons/fc';
 
 const Education = React.forwardRef((props, ref) => {
     return (
@@ -27,7 +25,7 @@ const Education = React.forwardRef((props, ref) => {
                             <p>May 2020 - April 2021</p>
                             <p>Langara College</p>
                             <p>Degree: Citation</p>
-                            <p>GPA: 4.22</p>
+                            <p>GPA: 4.13</p>
                             <a href="https://langara.ca/programs-and-courses/programs/full-stack-web-development/index.html" className="btn" target='_blank'>Program Info</a>
                         </div>
                     </article>               

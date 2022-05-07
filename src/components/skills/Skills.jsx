@@ -2,6 +2,13 @@ import React from 'react'
 import './skills.css'
 import {BsFillPatchCheckFill} from 'react-icons/bs'
 
+const dataFrontEnd = [
+  "HTML", "CSS", "JavaScript", "Bootstrap", "React"
+];
+const dataBackEnd = [
+  "NodeJS", "Java", "PHP", "MySQL", "MongoDB"
+];
+
 const Skills = React.forwardRef((props, ref) => {
   return (
     <section id="skills" ref={ref}>
@@ -12,47 +19,31 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="skills__frontend">
           <h3>Frontend Development</h3>
           <div className="skills__content">
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>HTML</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>CSS</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>JavaScript</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>Bootstrap</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>React</h4>  
-            </article>
+            {
+              dataFrontEnd.map((skill, index) => {
+                return(
+                  <article key={index} className='skills__details'>
+                  <BsFillPatchCheckFill className="skills__details-icon"/>
+                  <h4>{skill}</h4>  
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
         <div className="skills__backend">
           <h3>Backend Development</h3>
           <div className="skills__content">
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>Node JS</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>MongoDB</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>MySQL</h4>  
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className="skills__details-icon"/>
-              <h4>PHP</h4>  
-            </article>
+            {
+              dataBackEnd.map((skill, index) => {
+                return(
+                  <article key={index} className='skills__details'>
+                  <BsFillPatchCheckFill className="skills__details-icon"/>
+                  <h4>{skill}</h4>  
+                  </article>
+                )
+              })
+            }
           </div>
           </div>
         </div>

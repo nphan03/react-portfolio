@@ -2,7 +2,6 @@ import React from 'react';
 import './contact.css';
 import {MdOutlineEmail} from 'react-icons/md';
 import {RiMessengerLine} from 'react-icons/ri';
-// import {SiViber} from 'react-icons/si';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -14,7 +13,7 @@ const Contact = React.forwardRef((props, ref) => {
     
         emailjs.sendForm('service_vp7dxhn', 'template_6tjla8o', form.current, 'wtEi426AwnynBHSrF')
 
-        e.target.reset()
+        e.target.reset();
     };
 
     return (
@@ -37,13 +36,6 @@ const Contact = React.forwardRef((props, ref) => {
                         <h5>Nhien Phan Mathers</h5>
                         <a href="https://m.me/loveissweet0504" target='_blank'>Send a message</a>
                     </article>
-
-                    {/* <article className="contact__option">
-                        <SiViber/>
-                        <h4>Viber</h4>
-                        <h5>+1234567890</h5>
-                        <a href="viber://chat?number=17785126098">Send a message</a>
-                    </article> */}
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name='name' placeholder='Your Name' required />
